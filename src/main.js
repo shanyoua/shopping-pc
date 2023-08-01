@@ -1,14 +1,10 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
 
-// cs
-import {getCategory} from '@/apis/testAPI'
-getCategory().then(res=>{console.log(res)})
+import '@/styles/common.scss'
 
 const app = createApp(App)
 
