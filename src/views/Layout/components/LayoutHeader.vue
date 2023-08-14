@@ -1,8 +1,8 @@
 <script setup>
-import { useCounterStore } from '@/stores/category'
+import { useCategoryStore } from '@/stores/category'
 
 // 使用pinia中的数据
-const categoryStore = useCounterStore()
+const categoryStore = useCategoryStore()
 </script>
 
 <template>

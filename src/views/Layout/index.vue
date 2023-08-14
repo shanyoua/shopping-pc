@@ -5,10 +5,10 @@ import LayoutFooter from './components/LayoutFooter.vue'
 import LayoutFixed from './components/LayoutFixed.vue'
 
 // 触发获取列表的action
-import { useCounterStore } from '@/stores/category'
+import { useCategoryStore } from '@/stores/category'
 import { onMounted } from 'vue'
 
-const categoryStore = useCounterStore()
+const categoryStore = useCategoryStore()
 
 onMounted( ()=>categoryStore.getCategory()  )
 </script>
