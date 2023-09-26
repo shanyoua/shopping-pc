@@ -30,7 +30,13 @@ const router = createRouter({
     path: '/login',
     component: Login
    }
-  ]
+  ],
+  // 路由滚动行为定制
+  scollBehavior() {
+    return {
+      top:0
+    }
+  }
 })
 
 export default router
